@@ -2,298 +2,176 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Pricing · The Good Neighbor Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="style.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – The Good Neighbor Studio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">The Good Neighbor Studio</a>
 
-<script>
-  (function () {
-    const root = document.documentElement;
-    const saved = localStorage.getItem("theme") || "dark";
-    root.setAttribute("data-theme", saved);
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="pricing.html" class="nav-active">Pricing</a></li>
+          <li><a href="index.html#examples">Examples</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-    const btn = document.getElementById("themeToggle");
-    if (!btn) return;
-
-    function setLabel(theme) {
-      btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-    }
-
-    setLabel(saved);
-
-    btn.addEventListener("click", () => {
-      const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
-      const next = current === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-      setLabel(next);
-    });
-  })();
-</script>
-
-<body>
-  <!-- NAVIGATION -->
-  <nav class="nav">
-    <div class="nav-logo">The Good Neighbor Studio</div>
-    <ul class="nav-links">
-      <li><a href="index.html#hero">Home</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="realestate.html">Example: Real Estate</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- PRICING HERO -->
-  <header class="hero hero-slim">
-    <h1>Simple, transparent pricing.</h1>
-    <p class="subtitle">
-      Ranges show what most small projects cost. You get a clear quote before work starts.
-    </p>
-    <p class="note">
-      Prices are in USD. Scope, content, and timing can move a project to the top or bottom of a range.
-    </p>
+      <button id="theme-toggle" class="theme-toggle" type="button">
+        Light mode
+      </button>
+    </div>
   </header>
 
-  <!-- WEBSITE SERVICES TABLE -->
-  <section class="pricing-section">
-    <h2 class="section-title">Website Services</h2>
-
-    <div class="price-table">
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>1-Page Website (Landing Page)</h3>
-          <p>
-            A focused page for one offer, event, or simple service. Good for testing an idea
-            or giving people one clear place to land.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$150–$350</span>
-          <span class="price-note">Most basic landing pages live here.</span>
-        </div>
+  <main>
+    <section class="hero hero-compact">
+      <div class="container">
+        <h1>Pricing</h1>
+        <p>
+          Simple ranges so you can budget. Final quotes depend on scope and timing.
+        </p>
       </div>
+    </section>
 
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>3–5 Page Business Website</h3>
-          <p>
-            A small site with core pages like Home, About, Services, Gallery, and Contact.
-            Built to feel stable and easy to read on phones.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$400–$900</span>
-          <span class="price-note">Range depends on content and extra sections.</span>
-        </div>
-      </div>
+    <section class="section">
+      <div class="container pricing-layout">
+        <article class="card">
+          <h2>Website services</h2>
+          <p>For owners who need a clear site that does the basics well.</p>
+          <ul class="pricing-list">
+            <li>
+              <h3>1-page website (landing page)</h3>
+              <p>Good for simple offers, events, or “link in bio” pages.</p>
+              <p class="price-tag">$150–$350</p>
+            </li>
+            <li>
+              <h3>3–5 page business website</h3>
+              <p>Home, services, about, contact, plus one extra page if needed.</p>
+              <p class="price-tag">$400–$900</p>
+            </li>
+            <li>
+              <h3>Website redesign</h3>
+              <p>Clean up an existing site: better layout, clearer copy, and updated visuals.</p>
+              <p class="price-tag">$200–$500</p>
+            </li>
+            <li>
+              <h3>Add-ons</h3>
+              <p class="add-on">
+                Booking system setup
+                <span class="price-tag">$40–$80</span>
+              </p>
+              <p class="add-on">
+                Contact form + email routing
+                <span class="price-tag">$20–$50</span>
+              </p>
+              <p class="add-on">
+                Domain + hosting setup
+                <span class="price-tag">$30–$50</span>
+              </p>
+            </li>
+          </ul>
+        </article>
 
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Website Redesign</h3>
-          <p>
-            Keep your current content but fix the layout, spacing, and structure. The aim is
-            a calmer site that still feels like you.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$200–$500</span>
-          <span class="price-note">Lower when content is ready, higher when we restructure.</span>
-        </div>
-      </div>
+        <article class="card">
+          <h2>Branding & graphics</h2>
+          <p>Small, focused packages that keep your visuals consistent.</p>
+          <ul class="pricing-list">
+            <li>
+              <h3>Logo design</h3>
+              <p>Clean logo plus a simple mark, delivered in web + print files.</p>
+              <p class="price-tag">$40–$150</p>
+            </li>
+            <li>
+              <h3>Business card design</h3>
+              <p>Front and back layout, ready for your print shop.</p>
+              <p class="price-tag">$20–$50</p>
+            </li>
+            <li>
+              <h3>Flyer, menu, or poster</h3>
+              <p>Print or digital promo for launches, specials, or events.</p>
+              <p class="price-tag">$25–$60</p>
+            </li>
+            <li>
+              <h3>Brand kit</h3>
+              <p>Basic color palette, fonts, and logo usage notes.</p>
+              <p class="price-tag">$75–$150</p>
+            </li>
+          </ul>
+        </article>
 
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Booking System Setup</h3>
-          <p>
-            Connect a booking tool so clients can grab slots without calling or texting you
-            all day. Works well for barbers, clinics, and studios.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$40–$80</span>
-          <span class="price-note">One-time setup for a single tool.</span>
-        </div>
+        <article class="card">
+          <h2>Quick micro-services</h2>
+          <p>Fast, focused jobs for small updates or promos.</p>
+          <ul class="pricing-list">
+            <li>
+              <h3>QR code menu</h3>
+              <p>Scan-to-view menu graphic for tables or flyers.</p>
+              <p class="price-tag">$10–$25</p>
+            </li>
+            <li>
+              <h3>Price list graphic</h3>
+              <p>Simple list for services, add-ons, or weekly specials.</p>
+              <p class="price-tag">$20–$40</p>
+            </li>
+            <li>
+              <h3>Grand opening flyers</h3>
+              <p>Print and social versions for launch events.</p>
+              <p class="price-tag">$25–$50</p>
+            </li>
+            <li>
+              <h3>Social media banners</h3>
+              <p>Covers for Facebook, X, or LinkedIn pages.</p>
+              <p class="price-tag">$15–$30</p>
+            </li>
+            <li>
+              <h3>Gift card design</h3>
+              <p>Simple branded gift card or voucher layout.</p>
+              <p class="price-tag">$20–$40</p>
+            </li>
+          </ul>
+        </article>
       </div>
+    </section>
+  </main>
 
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Contact Form + Email Routing</h3>
-          <p>
-            Build a form and send the messages to your chosen inbox. Keeps random DMs from
-            burying actual leads.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$20–$50</span>
-          <span class="price-note">Depends on how many fields and options you want.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Domain + Hosting Setup</h3>
-          <p>
-            Help you pick, buy, and connect a domain and basic hosting. All accounts stay in
-            your name and under your control.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$30–$50</span>
-          <span class="price-note">Does not include the cost of the domain or hosting.</span>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> The Good Neighbor Studio. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- BRANDING & GRAPHICS TABLE -->
-  <section class="pricing-section">
-    <h2 class="section-title">Branding & Graphics</h2>
-
-    <div class="price-table">
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Logo Design</h3>
-          <p>
-            Clean marks built to show up well on screens, shirts, doors, and reports.
-            No complex logo manuals, just files that do their job.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$40–$150</span>
-          <span class="price-note">Simple logos at the low end, extra concepts at the high end.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Business Card Design</h3>
-          <p>
-            Front and back designed to match your brand and stay legible. Hand these out
-            without feeling like you made them in a rush.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$20–$50</span>
-          <span class="price-note">Print-ready files, you handle printing.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Flyer / Menu / Poster</h3>
-          <p>
-            One-page designs for events, menus, or clear promos. Works for “Grand Opening,”
-            “New Menu,” or simple service highlights.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$25–$60</span>
-          <span class="price-note">Price depends on how complex the layout is.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Brand Kit (Colors, Fonts, Logo Set)</h3>
-          <p>
-            A small brand starter pack that gives you a color palette, font choices,
-            and logo exports. Enough to keep future work consistent.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$75–$150</span>
-          <span class="price-note">Good for new or reworked small brands.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MICRO SERVICES TABLE -->
-  <section class="pricing-section">
-    <h2 class="section-title">Quick Micro-Services</h2>
-
-    <div class="price-table">
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>QR Code Menu</h3>
-          <p>
-            A QR code that links to your menu or price sheet so people can scan at the table
-            or in line.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$10–$25</span>
-          <span class="price-note">One code and a simple page or PDF.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Price List Graphic</h3>
-          <p>
-            A clear, branded price list for posting online or printing. Often used by
-            barbers, salons, and small shops.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$20–$40</span>
-          <span class="price-note">One layout with your services and prices.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Grand Opening Flyers</h3>
-          <p>
-            A simple flyer that announces a launch or re-launch. You can post it, print it,
-            or send it as a message.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$25–$50</span>
-          <span class="price-note">Designed to be reused for more events.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Social Media Banners</h3>
-          <p>
-            Header images sized for common platforms. Keeps your pages from looking like
-            the default gray blocks.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$15–$30</span>
-          <span class="price-note">Price per platform or size set.</span>
-        </div>
-      </div>
-
-      <div class="price-row">
-        <div class="price-row-main">
-          <h3>Gift Card Design</h3>
-          <p>
-            A simple gift card layout for print or digital use. Works for salons, shops,
-            and service-based businesses.
-          </p>
-        </div>
-        <div class="price-row-value">
-          <span class="price-tag">$20–$40</span>
-          <span class="price-note">Single design, reuse as needed.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    © <span id="year"></span> The Good Neighbor Studio
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+
+    function updateThemeLabel() {
+      const dark = !body.classList.contains('theme-light');
+      themeToggle.textContent = dark ? 'Light mode' : 'Dark mode';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('theme-light');
+      updateThemeLabel();
+    });
+
+    updateThemeLabel();
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      navToggle.classList.toggle('nav-toggle-open');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

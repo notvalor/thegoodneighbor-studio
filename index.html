@@ -2,216 +2,344 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>The Good Neighbor Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="style.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Good Neighbor Studio – Web & Brand Design</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">The Good Neighbor Studio</a>
 
-<body>
-  <!-- NAVIGATION -->
-  <nav class="nav">
-    <div class="nav-logo">The Good Neighbor Studio</div>
-    <div class="nav-inner">
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="realestate.html">Example: Real Estate</a></li>
-        <li><a href="foodtruck.html">Example: Food Truck</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="toggle-theme" id="themeToggle" type="button">Light mode</button>
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" type="button">
+        Dark mode
+      </button>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <header id="hero" class="hero">
-    <h1>Clean, modern design for real businesses.</h1>
-    <p class="subtitle">
-      Websites • Logos • Business Cards • Branding • Flyers
-    </p>
-    <button class="cta">Book a Free Call</button>
-    <p class="note">
-      Clear design that helps people understand what you do and why it matters.
-    </p>
   </header>
 
-  <!-- SERVICES -->
-  <section id="services" class="services">
-    <h2 class="section-title">Services & Pricing</h2>
-    <p class="section-intro">
-      Straightforward design packages for small business owners. For full details,
-      visit the <a href="pricing.html">pricing page</a>.
-    </p>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <div class="pill">Design-only studio · Small business friendly</div>
+          <h1>Clean, modern websites and simple ads for local businesses.</h1>
+          <p class="hero-sub">
+            We design and build clear sites, logos, cards, and flyers so your
+            customers understand what you do in seconds.
+          </p>
 
-    <div class="grid">
-      <div class="card">
-        <div>
-          <div class="icon-circle">🌐</div>
-          <h3>Websites</h3>
-          <p>Small business websites built for clarity, speed, and ease of use.</p>
-          <p>Good for real estate, food vendors, salons, service work, and local shops.</p>
-        </div>
-        <div class="price-block">
-          <span class="price-label">Typical range</span>
-          <p class="price">$150–$900</p>
-          <p class="price-note">1-page sites at the low end, 3–5 pages at the high end.</p>
+          <ul class="hero-fit">
+            <li>Local service businesses and shops</li>
+            <li>Solo owners and two-person teams</li>
+            <li>People who want simple, non-techy sites</li>
+          </ul>
+
+          <div class="hero-actions">
+            <button id="cta-call" class="btn-primary" type="button">
+              Book a free call
+            </button>
+            <a href="pricing.html" class="btn-ghost">View pricing</a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div>
-          <div class="icon-circle">✒️</div>
-          <h3>Logos</h3>
-          <p>Simple, readable logos that hold up on signs, screens, and print.</p>
-          <p>Includes clean files you can reuse anywhere.</p>
-        </div>
-        <div class="price-block">
-          <span class="price-label">Starting at</span>
-          <p class="price">$40–$150</p>
-          <p class="price-note">Range depends on concepts and revisions.</p>
+    <!-- SERVICES (restored as multi-card layout) -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>
+            Straightforward design packages for small, local teams.
+          </p>
+        </header>
+
+        <div class="grid services-grid">
+          <article class="card">
+            <h3>One-page websites</h3>
+            <p>
+              A focused landing page that explains who you are, what you do,
+              and how to reach you.
+            </p>
+            <ul class="card-list">
+              <li>Clear sections for services, about, and contact</li>
+              <li>Mobile-friendly layout</li>
+              <li>Basic SEO setup (titles and descriptions)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Small multi-page sites</h3>
+            <p>
+              A simple site with a home page plus a few focused pages for
+              services, menus, or listings.
+            </p>
+            <ul class="card-list">
+              <li>2–5 carefully planned pages</li>
+              <li>Navigation that’s easy to understand</li>
+              <li>Content structure that supports your goals</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Logos & wordmarks</h3>
+            <p>
+              Straightforward logos that work on signs, shirts, and social
+              media without feeling overdesigned.
+            </p>
+            <ul class="card-list">
+              <li>Primary logo and simple icon</li>
+              <li>Files for web and print</li>
+              <li>Basic color and font recommendations</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Print & social pieces</h3>
+            <p>
+              Matching pieces for the rest of your brand: cards, flyers, menus,
+              and simple social templates.
+            </p>
+            <ul class="card-list">
+              <li>Business cards, flyers, posters, menus</li>
+              <li>Layouts sized for common print specs</li>
+              <li>Exported files ready for printers or uploads</li>
+            </ul>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div>
-          <div class="icon-circle">💳</div>
-          <h3>Business Cards</h3>
-          <p>Neat, balanced layouts sized exactly for print.</p>
-          <p>Designed to match your brand without feeling crowded.</p>
-        </div>
-        <div class="price-block">
-          <span class="price-label">Typical range</span>
-          <p class="price">$20–$50</p>
-          <p class="price-note">Delivered as print-ready files.</p>
+    <!-- EXAMPLES -->
+    <section id="examples" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Sample client work</h2>
+          <p>Demo layouts that mirror what a real project would look like.</p>
+        </header>
+
+        <div class="grid examples-grid">
+          <article class="card">
+            <h3>Real estate agent</h3>
+            <p>
+              A focused site for a small Brooklyn team: featured listing, sold
+              history, and simple contact.
+            </p>
+            <a href="realestate.html" class="btn-link">
+              View real estate example →
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Food truck</h3>
+            <p>
+              A lean site for a Mexican food truck: menu, weekly schedule, and
+              a small catering form.
+            </p>
+            <a href="foodtruck.html" class="btn-link">
+              View food truck example →
+            </a>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div>
-          <div class="icon-circle">🎨</div>
-          <h3>Brand Kits</h3>
-          <p>Basic brand systems with colors, fonts, and logo files in one place.</p>
-          <p>Helps keep future designs consistent across platforms.</p>
-        </div>
-        <div class="price-block">
-          <span class="price-label">Starting at</span>
-          <p class="price">$75–$150</p>
-          <p class="price-note">Built for small teams, not corporate handbooks.</p>
+    <!-- ABOUT / PROCESS + TEAM (KEEPING YOUR VERSION) -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>About The Good Neighbor Studio</h2>
+          <p>
+            We are a two-person, design-only studio. We focus on clear
+            communication and simple builds that small teams can actually use.
+          </p>
+        </header>
+
+        <div class="grid about-grid">
+          <article class="card">
+            <h3>How the process works</h3>
+            <ol class="process-list">
+              <li>
+                <strong>Step 1 – Short call and outline.</strong>
+                We talk through what you need, your budget, and your deadline.
+              </li>
+              <li>
+                <strong>Step 2 – Draft design and revisions.</strong>
+                You get a first version to react to. We adjust the layout,
+                colors, and wording together.
+              </li>
+              <li>
+                <strong>Step 3 – Final files and basic launch support.</strong>
+                We hand off files and help connect your domain or export
+                assets to your printer or developer.
+              </li>
+            </ol>
+          </article>
+
+          <div class="team">
+            <h3>Who you work with</h3>
+            <div class="grid team-grid">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card team-card"
+              >
+                <h4>Osric R.</h4>
+                <p>
+                  Design and layout. Focus on clear structure, clean typography,
+                  and making content easy to scan.
+                </p>
+                <span class="text-link">View LinkedIn →</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card team-card"
+              >
+                <h4>Franz G.</h4>
+                <p>
+                  Systems and support. Helps translate business needs into
+                  simple flows and practical features.
+                </p>
+                <span class="text-link">View LinkedIn →</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div>
-          <div class="icon-circle">📄</div>
-          <h3>Flyers & Menus</h3>
-          <p>One-page designs for events, menus, or service highlights.</p>
-          <p>Simple to print and easy to share online.</p>
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-layout">
+        <div class="contact-visual">
+          <div class="contact-image-placeholder">Your project here</div>
         </div>
-        <div class="price-block">
-          <span class="price-label">Per design</span>
-          <p class="price">$25–$60</p>
-          <p class="price-note">Menus, posters, and basic ads.</p>
+
+        <div class="contact-content">
+          <header class="section-header align-left">
+            <h2>Start a project</h2>
+            <p>
+              Tell us what you need and we’ll reply within 1–2 business days.
+            </p>
+          </header>
+
+          <div class="contact-details">
+            <p><strong>Email:</strong> PLACEHOLDER@GMAIL.COM</p>
+            <p><strong>Number:</strong> 3475497293</p>
+          </div>
+
+          <form class="contact-form" name="contact">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Business type (barbershop, food truck, real estate, etc.)
+              <input type="text" name="businessType" />
+            </label>
+            <label>
+              What do you need designed?
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+
+            <button type="submit" class="btn-primary">
+              Send message
+            </button>
+          </form>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="card">
-        <div>
-          <div class="icon-circle">⚡</div>
-          <h3>Micro-Services</h3>
-          <p>QR menus, price sheets, banners, gift card layouts, and other small needs.</p>
-          <p>Good when you want one useful thing, not a full project.</p>
-        </div>
-        <div class="price-block">
-          <span class="price-label">Most items</span>
-          <p class="price">$10–$50</p>
-          <p class="price-note">Quick, practical pieces for daily use.</p>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> The Good Neighbor Studio. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- ABOUT US -->
-  <section id="about" class="pricing-section">
-    <h2 class="section-title">About Us</h2>
-    <p class="section-intro">
-      The Good Neighbor Studio is a two-person team focused on clear, grounded design for small businesses.
-      The aim is simple: layouts that read well, pages that load fast, and visuals that stay useful long after delivery.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>How we work</h3>
-        <p>
-          Each project starts with a short call, followed by a clean draft, revisions, and a final package
-          you can reuse without needing us for every small change.
-        </p>
-        <p>
-          The process avoids jargon and unnecessary steps. You get direct communication and practical design
-          that fits your actual business instead of a generic template.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Who we work with</h3>
-        <p>
-          Most clients are small service businesses—real estate teams, food trucks, barbershops,
-          repair services, and independent sellers. The focus is on making it easier for people
-          to find you, understand what you offer, and take the next step.
-        </p>
-        <p>
-          The studio is built for owners who want clean design without a long production cycle
-          or inflated agency pricing.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact</h2>
-    <p class="section-intro">
-      Share what you need and the type of business you run. You will receive a reply
-      within one to two business days with next steps.
-    </p>
-
-    <form class="contact-form">
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <input type="text" placeholder="Business type (barbershop, food truck, real estate, etc.)" />
-      <textarea placeholder="What do you need designed?"></textarea>
-      <button class="cta" type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    © <span id="year"></span> The Good Neighbor Studio
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  <script>
-    (function () {
-      const root = document.documentElement;
-      const saved = localStorage.getItem("theme") || "dark";
-      root.setAttribute("data-theme", saved);
-      const btn = document.getElementById("themeToggle");
-      if (!btn) return;
-      function setLabel(theme) {
-        btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-      }
-      setLabel(saved);
-      btn.addEventListener("click", () => {
-        const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
-        const next = current === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        localStorage.setItem("theme", next);
-        setLabel(next);
+    // Theme / mode toggle
+    const body = document.body;
+    const themeToggle = document.getElementById("theme-toggle");
+
+    function updateThemeLabel() {
+      const dark = body.classList.contains("theme-dark");
+      themeToggle.textContent = dark ? "Light mode" : "Dark mode";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("theme-dark");
+      body.classList.toggle("theme-light");
+      updateThemeLabel();
+    });
+
+    updateThemeLabel();
+
+    // Mobile nav
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-open");
+      navToggle.classList.toggle("nav-toggle-open");
+    });
+
+    // Book a free call: copy number on desktop, dial on mobile
+    const ctaCall = document.getElementById("cta-call");
+    const phoneNumber = "3475497293";
+
+    function isMobileDevice() {
+      return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+    }
+
+    if (ctaCall) {
+      ctaCall.addEventListener("click", () => {
+        if (isMobileDevice()) {
+          window.location.href = "tel:" + phoneNumber;
+        } else if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard
+            .writeText(phoneNumber)
+            .then(() => {
+              const original = ctaCall.textContent;
+              ctaCall.textContent = "Number copied: " + phoneNumber;
+              setTimeout(() => {
+                ctaCall.textContent = original;
+              }, 2500);
+            })
+            .catch(() => {
+              alert("Number: " + phoneNumber);
+            });
+        } else {
+          alert("Number: " + phoneNumber);
+        }
       });
-    })();
+    }
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
