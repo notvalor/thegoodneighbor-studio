@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>La Noche Tacos · Food Truck Example Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Sample food truck website design with a realistic Mexican street food menu and weekly schedule."
+  />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-logo">Brightline Design</div>
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="realestate.html">Example: Real Estate</a></li>
+        <li><a href="foodtruck.html">Example: Food Truck</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="toggle-theme" id="themeToggle" type="button">Light mode</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero hero-slim">
+    <div class="ft-hero-tag">Sample client work · Food truck</div>
+    <h1>La Noche Tacos</h1>
+    <p class="subtitle">
+      A fictional late-night taco truck built to show how a simple site can share a menu,
+      weekly schedule, and contact details without getting in the way.
+    </p>
+    <p class="note">
+      All names and locations are placeholders. The layout and structure are ready for a real client.
+    </p>
+  </header>
+
+  <!-- ABOUT / LOCATION -->
+  <section class="pricing-section">
+    <h2 class="section-title">About the truck</h2>
+    <p class="section-intro">
+      La Noche Tacos serves casual Mexican street food: tacos, burritos, and a few simple sides.
+      The truck focuses on a short menu with fresh tortillas and consistent recipes.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>What they serve</h3>
+        <p>
+          The menu stays small on purpose: a few core tacos, larger burritos, and house-made salsas.
+          This keeps prep tight and wait times short during late-night rushes.
+        </p>
+        <p>
+          Specials rotate by week, but the standard options below stay on the menu year round.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Where they park</h3>
+        <p>
+          Most nights the truck is within walking distance of subway stops and bars, with a focus on
+          repeat corners so regulars know where to look.
+        </p>
+        <p class="re-meta" style="margin-top:0.5rem;">
+          This schedule is a sample. A real client would swap in live locations and times.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="pricing-section">
+    <h2 class="section-title">Menu</h2>
+    <p class="section-intro">
+      Prices are realistic but fictional. The layout keeps things clear on small screens.
+    </p>
+
+    <div class="menu-grid">
+      <div class="card menu-card">
+        <h3>Tacos · $3.50 each · 3 for $9.50</h3>
+        <div class="menu-item">
+          <span>Al Pastor</span><span>$3.50</span>
+        </div>
+        <p class="price-note">Marinated pork, pineapple, onion, cilantro.</p>
+
+        <div class="menu-item">
+          <span>Carne Asada</span><span>$3.75</span>
+        </div>
+        <p class="price-note">Grilled steak, onion, cilantro, lime.</p>
+
+        <div class="menu-item">
+          <span>Pollo a la Parrilla</span><span>$3.50</span>
+        </div>
+        <p class="price-note">Grilled chicken, salsa verde, lettuce.</p>
+
+        <div class="menu-item">
+          <span>Veggie Noche</span><span>$3.50</span>
+        </div>
+        <p class="price-note">Griddled peppers, onions, black beans, queso fresco.</p>
+      </div>
+
+      <div class="card menu-card">
+        <h3>Burritos &amp; Quesadillas</h3>
+
+        <div class="menu-item">
+          <span>Al Pastor Burrito</span><span>$10.50</span>
+        </div>
+        <p class="price-note">Rice, beans, cheese, pastor, salsa roja.</p>
+
+        <div class="menu-item">
+          <span>Carne Asada Burrito</span><span>$11.25</span>
+        </div>
+        <p class="price-note">Grilled steak, pico de gallo, guacamole.</p>
+
+        <div class="menu-item">
+          <span>Cheese Quesadilla</span><span>$7.00</span>
+        </div>
+        <p class="price-note">Flour tortilla, melted cheese, salsa on the side.</p>
+
+        <div class="menu-item">
+          <span>Chicken Quesadilla</span><span>$8.50</span>
+        </div>
+        <p class="price-note">Grilled chicken, cheese, chipotle crema.</p>
+      </div>
+
+      <div class="card menu-card">
+        <h3>Sides &amp; Drinks</h3>
+
+        <div class="menu-item">
+          <span>Chips &amp; Salsa Trio</span><span>$5.50</span>
+        </div>
+        <p class="price-note">Roja, verde, and a mild roasted salsa.</p>
+
+        <div class="menu-item">
+          <span>Street Corn Cup</span><span>$4.75</span>
+        </div>
+        <p class="price-note">Corn, lime, mayo, cotija, chili powder.</p>
+
+        <div class="menu-item">
+          <span>Jarritos (assorted)</span><span>$3.00</span>
+        </div>
+        <p class="price-note">Tamarind, mandarin, lime, and more.</p>
+
+        <div class="menu-item">
+          <span>Horchata</span><span>$3.50</span>
+        </div>
+        <p class="price-note">House-made cinnamon rice drink.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="pricing-section">
+    <h2 class="section-title">Weekly schedule</h2>
+    <p class="section-intro">
+      A simple schedule gives regulars a pattern to follow.
+    </p>
+
+    <div class="price-table">
+      <div class="price-row">
+        <div class="price-row-main">
+          <h3>Thursday · 6:00 pm – 11:00 pm</h3>
+          <p>Sample location: Corner of 5th Ave &amp; 12th St · Near bars and late-night foot traffic.</p>
+        </div>
+        <div class="price-row-value">
+          <span class="price-tag">Park Slope</span>
+          <span class="price-note">Typical “school night” shift.</span>
+        </div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-row-main">
+          <h3>Friday · 7:00 pm – 1:30 am</h3>
+          <p>Sample location: Outside a fictional music venue near Atlantic Ave.</p>
+        </div>
+        <div class="price-row-value">
+          <span class="price-tag">Downtown Brooklyn</span>
+          <span class="price-note">Heavy walk-up traffic.</span>
+        </div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-row-main">
+          <h3>Saturday · 5:00 pm – 1:00 am</h3>
+          <p>Sample location: Rotating corner near a park and apartment buildings.</p>
+        </div>
+        <div class="price-row-value">
+          <span class="price-tag">Rotating spot</span>
+          <span class="price-note">Posted weekly on social media.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="pricing-section">
+    <h2 class="section-title">Catering &amp; contact</h2>
+    <p class="section-intro">
+      This block shows how a food truck can take catering requests without a complex system.
+    </p>
+
+    <div class="re-contact-grid">
+      <form class="contact-form">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Event type (office, wedding, birthday, etc.)" />
+        <textarea placeholder="Date, headcount, and any menu notes."></textarea>
+        <button class="cta" type="submit">Request catering info</button>
+      </form>
+
+      <div class="card">
+        <h3>Contact details (sample)</h3>
+        <p>
+          La Noche Tacos (fictional)<br />
+          Instagram: @lanochetacos_demo<br />
+          Phone: (347) 555-7412
+        </p>
+        <p class="re-meta" style="margin-top:0.5rem;">
+          In a real build, this section would also link to a live map or social feed
+          where tonight’s location is posted.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    Example food truck site · Designed by Brightline Design Studio · © <span id="year"></span>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const saved = localStorage.getItem("theme") || "dark";
+      root.setAttribute("data-theme", saved);
+      const btn = document.getElementById("themeToggle");
+      if (!btn) return;
+      function setLabel(theme) {
+        btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+      }
+      setLabel(saved);
+      btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+        const next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        setLabel(next);
+      });
+    })();
+  </script>
+</body>
+</html>

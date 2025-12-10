@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brightline Design Studio · Service Sheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    @media print {
+      .nav, .footer, .no-print { display: none !important; }
+      body { background: #ffffff !important; }
+    }
+    .sheet {
+      max-width: 800px;
+      margin: 2rem auto 3rem;
+      background: var(--bg2);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 2rem;
+    }
+    .sheet h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .sheet h2 {
+      font-size: 1.2rem;
+      margin-top: 1.6rem;
+      margin-bottom: 0.3rem;
+    }
+    .sheet p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .sheet-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin: 0.2rem 0;
+    }
+    .sheet-row strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav no-print">
+    <div class="nav-logo">Brightline Design</div>
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <button class="toggle-theme" id="themeToggle" type="button">Light mode</button>
+    </div>
+  </nav>
+
+  <main class="sheet">
+    <h1>Brightline Design Studio</h1>
+    <p>
+      Design-only studio for small businesses. This sheet lists typical ranges for common work.
+      Final quotes depend on content, timing, and revisions.
+    </p>
+
+    <h2>Website services</h2>
+    <div class="sheet-row"><span>1-page website (landing page)</span><strong>$150–$350</strong></div>
+    <div class="sheet-row"><span>3–5 page business website</span><strong>$400–$900</strong></div>
+    <div class="sheet-row"><span>Website redesign</span><strong>$200–$500</strong></div>
+    <div class="sheet-row"><span>Booking system setup</span><strong>$40–$80</strong></div>
+    <div class="sheet-row"><span>Contact form + routing</span><strong>$20–$50</strong></div>
+    <div class="sheet-row"><span>Domain + hosting setup</span><strong>$30–$50</strong></div>
+
+    <h2>Branding &amp; graphics</h2>
+    <div class="sheet-row"><span>Logo design</span><strong>$40–$150</strong></div>
+    <div class="sheet-row"><span>Business card design</span><strong>$20–$50</strong></div>
+    <div class="sheet-row"><span>Flyer / menu / poster</span><strong>$25–$60</strong></div>
+    <div class="sheet-row"><span>Brand kit (colors, fonts, logo set)</span><strong>$75–$150</strong></div>
+
+    <h2>Micro-services</h2>
+    <div class="sheet-row"><span>QR code menu</span><strong>$10–$25</strong></div>
+    <div class="sheet-row"><span>Price list graphic</span><strong>$20–$40</strong></div>
+    <div class="sheet-row"><span>Grand opening flyer</span><strong>$25–$50</strong></div>
+    <div class="sheet-row"><span>Social media banners</span><strong>$15–$30</strong></div>
+    <div class="sheet-row"><span>Gift card design</span><strong>$20–$40</strong></div>
+  </main>
+
+  <footer class="footer no-print">
+    Print this page to save as PDF · © <span id="year"></span> Brightline Design Studio
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const saved = localStorage.getItem("theme") || "dark";
+      root.setAttribute("data-theme", saved);
+      const btn = document.getElementById("themeToggle");
+      if (!btn) return;
+      function setLabel(theme) {
+        btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+      }
+      setLabel(saved);
+      btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+        const next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        setLabel(next);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>John Doe Realty · Example Real Estate Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Sample real estate website design for a Brooklyn-based agent team, consistent with Brightline Design Studio branding."
+  />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-logo">Brightline Design</div>
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="realestate.html">Example: Real Estate</a></li>
+        <li><a href="foodtruck.html">Example: Food Truck</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="toggle-theme" id="themeToggle" type="button">Light mode</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero hero-slim">
+    <div class="re-kicker">Sample client work · Real estate</div>
+    <h1>John Doe Realty — Central Brooklyn focus.</h1>
+    <p class="subtitle">
+      This demo shows how a calm and structured layout supports a small real estate team:
+      a clear hero, one featured listing, current listings, client quotes, and a direct contact block.
+    </p>
+    <p class="note">
+      All names, addresses, and prices are fictional. The tone and structure mirror what a real small-team website would use.
+    </p>
+  </header>
+
+  <!-- AGENT OVERVIEW -->
+  <section class="pricing-section">
+    <h2 class="section-title">Agent profile</h2>
+    <p class="section-intro">
+      The top of the site explains who the team is, where they work, and how they help.
+      It sets expectations without hype.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="re-kicker">Licensed real estate team</div>
+        <h3>John Doe Realty · Brooklyn, NY</h3>
+        <p>
+          John Doe Realty works with buyers and sellers in Park Slope, Windsor Terrace,
+          Prospect Heights, and nearby areas. The focus stays on clear steps, fair pricing,
+          and steady updates.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Two-person team</span>
+          <span class="pill">10+ years in the market</span>
+          <span class="pill">190+ closed transactions</span>
+        </div>
+        <p class="re-badge-text">
+          The goal is simple: no surprises at closing and no pressure along the way.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>How this layout helps a team</h3>
+        <p>
+          This card sums up why a visitor should care and where they fit. It also works
+          as a talking point when you show the site to a client.
+        </p>
+        <ul style="margin:0.6rem 0 0; padding-left:1rem; color:var(--muted); font-size:0.9rem;">
+          <li>Explains areas served and typical clients.</li>
+          <li>Uses calm language instead of hard selling.</li>
+          <li>Gives a sense of volume and experience with simple numbers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED LISTING -->
+  <section class="pricing-section">
+    <h2 class="section-title">Featured listing</h2>
+    <p class="section-intro">
+      One main property sits near the top of the page. The layout mirrors listing sites,
+      but still looks like part of the team’s own brand.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <img
+          class="re-photo-main"
+          src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Brownstone-style building with stoop and trees on a quiet Brooklyn street"
+        />
+        <p class="re-meta">412 9th Street · Park Slope · Brooklyn, NY 11215</p>
+        <p class="re-price">$1,295,000 · 2 bed · 1.5 bath · 1,150 sq ft</p>
+        <p>
+          Floor-through home on a tree-lined block with original woodwork, high ceilings,
+          and updated systems. South-facing living room and eat-in kitchen keep the space bright.
+        </p>
+        <p class="re-meta" style="margin-top:0.5rem;">
+          • Self-managed four-unit co-op · Shared backyard · Close to F/G at 7th Ave
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>How this section works</h3>
+        <p>
+          The featured listing reads like a short, honest summary. It avoids filler and
+          sticks to layout, light, and location.
+        </p>
+        <ul style="margin:0.6rem 0 0; padding-left:1rem; color:var(--muted); font-size:0.9rem;">
+          <li>Photo first, so the property feels real.</li>
+          <li>Address and price in a consistent format.</li>
+          <li>Beds, baths, and square footage near the top.</li>
+          <li>One paragraph that focuses on what it is like to live there.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT LISTINGS -->
+  <section class="pricing-section">
+    <h2 class="section-title">Current listings</h2>
+    <p class="section-intro">
+      A small grid of listings lets a team show scale without dumping every property on one page.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <img
+          class="re-photo"
+          src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Brick townhouse with small front garden and steps"
+        />
+        <h3>Windsor Terrace single-family home</h3>
+        <p class="re-meta">
+          3 bed · 2.5 bath · Private yard · Near Prospect Park Southwest
+        </p>
+        <p class="re-price">$1,875,000</p>
+        <p>
+          Brick home with a finished basement, driveway, and a backyard that feels like a small
+          outdoor room rather than a leftover space.
+        </p>
+      </article>
+
+      <article class="card">
+        <img
+          class="re-photo"
+          src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Modern apartment building exterior with glass balconies"
+        />
+        <h3>Prospect Heights condo near the park</h3>
+        <p class="re-meta">
+          1 bed · 1 bath · Elevator building · Prospect Place &amp; Vanderbilt
+        </p>
+        <p class="re-price">$675,000</p>
+        <p>
+          Corner unit with tall windows, updated kitchen, and in-building laundry.
+          A five to seven minute walk to the park and express trains.
+        </p>
+      </article>
+
+      <article class="card">
+        <img
+          class="re-photo"
+          src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Historic apartment building with brick facade and fire escapes"
+        />
+        <h3>Crown Heights pre-war co-op</h3>
+        <p class="re-meta">
+          2 bed · 1 bath · Top floor · Eastern Parkway
+        </p>
+        <p class="re-price">$825,000</p>
+        <p>
+          Pre-war layout with hardwood floors and a flexible second bedroom that can act
+          as a study, nursery, or guest room.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CLIENT QUOTES -->
+  <section class="pricing-section">
+    <h2 class="section-title">Client words</h2>
+    <p class="section-intro">
+      Short, specific quotes build trust without turning the page into a wall of praise.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <p class="quote-small">
+          “We sold our condo and bought a house in the same neighborhood. The steps were clear,
+          and the plan for timing made sense.”
+          <strong>Sample seller · Windsor Terrace</strong>
+        </p>
+      </div>
+      <div class="card">
+        <p class="quote-small">
+          “As first-time buyers, we had more questions than we thought. Every part of the process
+          was explained in normal language.”
+          <strong>Sample buyers · Prospect Heights</strong>
+        </p>
+      </div>
+      <div class="card">
+        <p class="quote-small">
+          “We talked through pricing, small repairs, and how to handle showings with kids at home.
+          That helped a lot.”
+          <strong>Sample seller · Park Slope</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="pricing-section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-intro">
+      The contact block keeps things simple: name, basic plans, and best way to reach the team.
+      That is enough to decide the next step.
+    </p>
+
+    <div class="re-contact-grid">
+      <form class="contact-form">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Buying, selling, or both?" />
+        <textarea placeholder="Timing, neighborhoods, and any questions you already have."></textarea>
+        <button class="cta" type="submit">Send message</button>
+      </form>
+
+      <div class="card">
+        <h3>Contact details (sample)</h3>
+        <p>
+          John Doe Realty<br />
+          Park Slope, Brooklyn
+        </p>
+        <p class="re-meta" style="margin-top:0.5rem;">
+          Email: hello@johndoerealty-demo.com<br />
+          Phone: (718) 555-2486
+        </p>
+        <p class="re-badge-text" style="margin-top:0.7rem;">
+          This page exists to show layout and tone. When you present it to a client,
+          you would replace the sample contact block with their real details.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    Example real estate site · Designed by Brightline Design Studio · © <span id="year"></span>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const saved = localStorage.getItem("theme") || "dark";
+      root.setAttribute("data-theme", saved);
+      const btn = document.getElementById("themeToggle");
+      if (!btn) return;
+      function setLabel(theme) {
+        btn.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+      }
+      setLabel(saved);
+      btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
+        const next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        setLabel(next);
+      });
+    })();
+  </script>
+</body>
+</html>
