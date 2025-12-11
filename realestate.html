@@ -1,424 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>John Doe Realty · Sample Real Estate Website · The Good Neighbor Studio</title>
-    <meta
-      name="description"
-      content="Sample real estate website for John Doe Realty. A calm, modern layout for a solo agent focused on Central Brooklyn homes."
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- SITE HEADER -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="index.html" class="logo">THE GOOD NEIGHBOR STUDIO</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe Realty – Sample Real Estate Site · The Good Neighbor Studio</title>
+  <meta
+    name="description"
+    content="Sample real estate website for John Doe Realty. A calm, modern layout for a solo agent focused on Central Brooklyn homes."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">The Good Neighbor Studio</a>
 
-        <nav class="nav-links">
-          <a href="index.html#top">Home</a>
-          <a href="index.html#services">Services</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="index.html#examples">Examples</a>
-          <a href="index.html#about">About Us</a>
-          <a href="index.html#contact">Contact</a>
-        </nav>
-
-        <button
-          id="themeToggle"
-          class="theme-toggle"
-          type="button"
-          aria-label="Toggle dark or light mode"
-        >
-          Light mode
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
         </button>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#examples" class="nav-active">Examples</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" type="button">
+        Light mode
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Sample client work · Real estate website</p>
+          <h1>John Doe Realty — Central Brooklyn homes, made simple.</h1>
+          <p class="hero-sub">
+            A clear, quiet site for a solo agent. One strong message, one
+            featured home, a clean list of current listings, and an easy way
+            to reach out.
+          </p>
+
+          <ul class="hero-fit">
+            <li>Licensed real estate salesperson · Brooklyn, NY</li>
+            <li>Focus on brownstones, walk-ups, and small co-ops</li>
+            <li>Buyers, first-time sellers, and small landlords</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="#listings" class="btn-primary">View current listings</a>
+            <a href="#contact" class="btn-ghost">Book a viewing</a>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- HERO -->
-      <section class="section hero hero-real-estate">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Sample client work · Real estate website</p>
-            <h1>John Doe Realty — Central Brooklyn homes, made simple.</h1>
-            <p class="hero-text">
-              A clear, quiet site for a solo agent. One strong message, one
-              featured home, a clean list of current listings, and an easy way
-              to reach out.
-            </p>
+    <!-- AGENT SNAPSHOT -->
+    <section class="section">
+      <div class="container grid about-grid">
+        <article class="card">
+          <h2>Meet John Doe Realty</h2>
+          <p>
+            John is a Brooklyn-based agent who works with buyers and sellers
+            in Central Brooklyn. The site gives him a simple way to show new
+            listings, recent wins, and a clear next step.
+          </p>
+          <p>
+            The tone is direct and steady. No sliders. No noise. Just the
+            information a serious buyer or seller needs.
+          </p>
 
-            <div class="hero-actions">
-              <a href="#listings" class="btn primary">View current listings</a>
-              <a href="#contact" class="btn ghost">Book a viewing</a>
+          <dl class="card-list">
+            <div>
+              <dt><strong>8+</strong></dt>
+              <dd>Years helping buyers in Brooklyn</dd>
             </div>
+            <div>
+              <dt><strong>120+</strong></dt>
+              <dd>Closed sales and rentals</dd>
+            </div>
+            <div>
+              <dt><strong>5</strong></dt>
+              <dd>Neighborhoods in daily focus</dd>
+            </div>
+          </dl>
+        </article>
 
-            <ul class="hero-highlights">
-              <li>Licensed real estate salesperson · Brooklyn, NY</li>
-              <li>Focus on brownstones, walk-ups, and small co-ops</li>
-              <li>Buyers, first-time sellers, and small landlords</li>
-            </ul>
-          </div>
+        <article class="card">
+          <h3>What this layout does well</h3>
+          <ul class="card-list">
+            <li>Shows one clear featured home at the top.</li>
+            <li>Groups current listings in a simple, scannable grid.</li>
+            <li>Highlights a few recent sales to build trust.</li>
+            <li>Explains the process in plain language.</li>
+            <li>Ends with a clear, low-pressure contact block.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-          <figure class="hero-image-card">
+    <!-- FEATURED PROPERTY -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header align-left">
+          <h2>Featured home</h2>
+          <p>
+            The top of the page highlights one key listing with strong
+            photos, a short summary, and the basics buyers look for.
+          </p>
+        </header>
+
+        <div class="grid services-grid">
+          <article class="card">
             <img
-              src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=900"
-              alt="Tree-lined Brooklyn street with brick townhouses at sunset"
+              class="card-img"
+              src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Renovated Brooklyn brownstone with large windows and front steps"
             />
-            <figcaption>
-              A calm, photo-led hero makes it easy to see the agent's focus at a
-              glance.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+            <p class="price-tag">For sale · Park Slope</p>
+            <h3>3-bed brownstone on a quiet, tree-lined block.</h3>
+            <p><strong>$1,895,000</strong></p>
+            <p class="card-list">
+              South-facing brownstone with original details, tall windows,
+              and a clean, modern renovation. One block from Prospect Park,
+              close to the F/G lines, and tucked away from heavy traffic.
+            </p>
+          </article>
 
-      <!-- AGENT SNAPSHOT -->
-      <section class="section">
-        <div class="container grid two-column">
           <article class="card">
-            <h2>Meet John Doe Realty</h2>
-            <p>
-              John is a Brooklyn-based agent who works with buyers and sellers
-              in Central Brooklyn. The site gives him a simple way to show new
-              listings, recent wins, and a clear next step.
-            </p>
-            <p>
-              The tone is direct and steady. No sliders. No noise. Just the
-              information a serious buyer or seller needs.
-            </p>
-
-            <dl class="stats-list">
-              <div>
-                <dt>8+</dt>
-                <dd>Years helping buyers in Brooklyn</dd>
-              </div>
-              <div>
-                <dt>120+</dt>
-                <dd>Closed sales and rentals</dd>
-              </div>
-              <div>
-                <dt>5</dt>
-                <dd>Neighborhoods in daily focus</dd>
-              </div>
-            </dl>
-          </article>
-
-          <article class="card card-soft">
-            <h3>What this layout does well</h3>
-            <ul class="bullet-list">
-              <li>Shows one clear featured home at the top.</li>
-              <li>Groups current listings in a simple, scannable grid.</li>
-              <li>Highlights a few recent sales to build trust.</li>
-              <li>Explains the process in plain language.</li>
-              <li>Ends with a clear, low-pressure contact block.</li>
+            <h3>At-a-glance details</h3>
+            <ul class="card-list">
+              <li>3 beds · 2.5 baths · 1,850 sq ft</li>
+              <li>Built 1910 · Updated 2022</li>
+              <li>Floor-through living and dining with exposed brick.</li>
+              <li>Updated kitchen with gas range and full pantry wall.</li>
+              <li>Private backyard and finished garden level flex space.</li>
             </ul>
-          </article>
-        </div>
-      </section>
 
-      <!-- FEATURED PROPERTY -->
-      <section class="section section-tinted">
-        <div class="container">
-          <header class="section-header">
-            <h2>Featured home</h2>
-            <p>
-              The top of the page highlights one key listing with strong
-              photos, a short summary, and the basics buyers look for.
-            </p>
-          </header>
-
-          <article class="featured-property card">
-            <div class="featured-media">
-              <img
-                src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Renovated Brooklyn brownstone with large windows and front steps"
-              />
-              <div class="featured-gallery">
-                <img
-                  src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Bright living room with tall windows and wooden floors"
-                />
-                <img
-                  src="https://images.pexels.com/photos/259580/pexels-photo-259580.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Modern kitchen with white cabinets and center island"
-                />
-                <img
-                  src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Bedroom with soft lighting and large window"
-                />
-              </div>
-            </div>
-
-            <div class="featured-details">
-              <p class="tag">For sale · Park Slope</p>
-              <h3>3-bed brownstone on a quiet, tree-lined block.</h3>
-
-              <p class="featured-price">$1,895,000</p>
-
-              <ul class="property-meta">
-                <li>3 beds</li>
-                <li>2.5 baths</li>
-                <li>1,850 sq ft</li>
-                <li>Built 1910 · Updated 2022</li>
-              </ul>
-
-              <p>
-                South-facing brownstone with original details, tall windows, and
-                a clean, modern renovation. One block from Prospect Park,
-                close to the F/G lines, and tucked away from heavy traffic.
-              </p>
-
-              <ul class="bullet-list">
-                <li>Floor-through living and dining with exposed brick.</li>
-                <li>Updated kitchen with gas range and full pantry wall.</li>
-                <li>Private backyard and finished garden level flex space.</li>
-              </ul>
-
-              <div class="featured-actions">
-                <a href="#contact" class="btn primary">Book a viewing</a>
-                <a href="#listings" class="btn ghost">See all current homes</a>
-              </div>
+            <div class="hero-actions" style="margin-top: 1.25rem;">
+              <a href="#contact" class="btn-primary">Book a viewing</a>
+              <a href="#listings" class="btn-ghost">See all current homes</a>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CURRENT LISTINGS -->
-      <section id="listings" class="section">
-        <div class="container">
-          <header class="section-header">
-            <h2>Current listings</h2>
-            <p>
-              A clean grid of homes with the key details up front. Each card
-              leads to a full detail page or PDF in a real build.
+    <!-- CURRENT LISTINGS -->
+    <section id="listings" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Current listings</h2>
+          <p>
+            A clean grid of homes with the key details up front. Click any
+            card to see more photos and full details.
+          </p>
+        </header>
+
+        <div class="grid services-grid">
+          <!-- Listing 1 -->
+          <article
+            class="card listing-card"
+            data-modal-target="listing-park-slope-condo"
+          >
+            <img
+              class="card-img"
+              src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Modern apartment building with balconies"
+            />
+            <p class="price-tag">For sale · Crown Heights</p>
+            <h3>2-bed condo with balcony and park views.</h3>
+            <p class="card-list">
+              Bright corner unit with private outdoor space and in-unit
+              laundry.
             </p>
-          </header>
-
-          <div class="grid three-column">
-            <article class="card property-card">
-              <img
-                src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Modern apartment building with balconies"
-              />
-              <div class="property-body">
-                <p class="tag">For sale · Crown Heights</p>
-                <h3>2-bed condo with balcony and park views.</h3>
-                <p class="property-price">$825,000</p>
-                <ul class="property-meta">
-                  <li>2 beds</li>
-                  <li>2 baths</li>
-                  <li>Elevator building</li>
-                </ul>
-                <p class="property-note">
-                  Bright corner unit with private outdoor space and in-unit
-                  laundry.
-                </p>
-              </div>
-            </article>
-
-            <article class="card property-card">
-              <img
-                src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Classic brick apartment building with fire escapes"
-              />
-              <div class="property-body">
-                <p class="tag">For rent · Prospect Heights</p>
-                <h3>Top-floor 1-bed in pre-war walk-up.</h3>
-                <p class="property-price">$3,050 / month</p>
-                <ul class="property-meta">
-                  <li>1 bed</li>
-                  <li>1 bath</li>
-                  <li>Pets on approval</li>
-                </ul>
-                <p class="property-note">
-                  High ceilings, original moldings, and a short walk to the 2/3
-                  and Q/B lines.
-                </p>
-              </div>
-            </article>
-
-            <article class="card property-card">
-              <img
-                src="https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Row of attached homes with small front yards"
-              />
-              <div class="property-body">
-                <p class="tag tag-muted">In contract · Kensington</p>
-                <h3>Single-family brick home with garage.</h3>
-                <p class="property-price">$1,250,000</p>
-                <ul class="property-meta">
-                  <li>3 beds</li>
-                  <li>2 baths</li>
-                  <li>Private driveway</li>
-                </ul>
-                <p class="property-note">
-                  Shows how the site can mark homes that are already in
-                  contract or sold.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- RECENT SALES + PROCESS -->
-      <section class="section section-tinted">
-        <div class="container grid two-column">
-          <article class="card">
-            <h2>Recent sales snapshot</h2>
-            <p>
-              A short list of recent closings gives buyers and sellers a sense
-              of pace and price, without flooding the page.
-            </p>
-            <ul class="sales-list">
-              <li>
-                <strong>2-bed co-op · Windsor Terrace</strong>
-                <span>Sold at $975,000 · 14 days on market</span>
-              </li>
-              <li>
-                <strong>Garden rental · Crown Heights</strong>
-                <span>Leased at $3,400 / month · 7 days on market</span>
-              </li>
-              <li>
-                <strong>Single-family · Sunset Park</strong>
-                <span>Sold at $1,325,000 · 19 days on market</span>
-              </li>
-            </ul>
+            <button type="button" class="card-link">View details</button>
           </article>
 
-          <article class="card card-soft">
-            <h2>How John works with clients</h2>
-            <ol class="process-list">
-              <li>
-                <strong>Step 1 – Short call.</strong>
-                Get clear on needs, timing, and budget.
-              </li>
-              <li>
-                <strong>Step 2 – Plan and tours.</strong>
-                Map out options, walk through homes, and sort what fits and
-                what does not.
-              </li>
-              <li>
-                <strong>Step 3 – Offer and closing.</strong>
-                Help with offers, negotiation, and the paperwork that follows.
-              </li>
-              <li>
-                <strong>Step 4 – After closing.</strong>
-                Stay available for referrals, vendors, and local questions.
-              </li>
-            </ol>
+          <!-- Listing 2 -->
+          <article
+            class="card listing-card"
+            data-modal-target="listing-prospect-heights-rental"
+          >
+            <img
+              class="card-img"
+              src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Classic brick apartment building with fire escapes"
+            />
+            <p class="price-tag">For rent · Prospect Heights</p>
+            <h3>Top-floor 1-bed in pre-war walk-up.</h3>
+            <p class="card-list">
+              High ceilings, original moldings, and a short walk to the 2/3
+              and Q/B lines.
+            </p>
+            <button type="button" class="card-link">View details</button>
+          </article>
+
+          <!-- Listing 3 -->
+          <article
+            class="card listing-card"
+            data-modal-target="listing-kensington-house"
+          >
+            <img
+              class="card-img"
+              src="https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Row of attached homes with small front yards"
+            />
+            <p class="price-tag">In contract · Kensington</p>
+            <h3>Single-family brick home with garage.</h3>
+            <p class="card-list">
+              Shows how the site can mark homes that are already in
+              contract or sold.
+            </p>
+            <button type="button" class="card-link">View details</button>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- TESTIMONIALS -->
-      <section class="section">
-        <div class="container">
-          <header class="section-header">
-            <h2>What clients say</h2>
-            <p>
-              Short, specific quotes carry more weight than long blocks of
-              praise.
-            </p>
-          </header>
+    <!-- RECENT SALES + PROCESS -->
+    <section class="section section-alt">
+      <div class="container grid about-grid">
+        <article class="card">
+          <h2>Recent sales snapshot</h2>
+          <p>
+            A short list of recent closings gives buyers and sellers a sense
+            of pace and price, without flooding the page.
+          </p>
+          <ul class="card-list">
+            <li><strong>2-bed co-op · Windsor Terrace</strong><br />Sold at $975,000 · 14 days on market</li>
+            <li><strong>Garden rental · Crown Heights</strong><br />Leased at $3,400 / month · 7 days on market</li>
+            <li><strong>Single-family · Sunset Park</strong><br />Sold at $1,325,000 · 19 days on market</li>
+          </ul>
+        </article>
 
-          <div class="grid three-column">
-            <article class="card quote-card">
-              <p>
-                “We never felt pushed. John laid out the options, walked us
-                through every form, and let us move at our pace.”
-              </p>
-              <p class="quote-meta">Buyer · Kensington co-op</p>
-            </article>
+        <article class="card">
+          <h2>How John works with clients</h2>
+          <ol class="process-list">
+            <li><strong>Step 1 – Short call.</strong> Get clear on needs, timing, and budget.</li>
+            <li><strong>Step 2 – Plan and tours.</strong> Map out options, walk through homes, and sort what fits and what does not.</li>
+            <li><strong>Step 3 – Offer and closing.</strong> Help with offers, negotiation, and the paperwork that follows.</li>
+            <li><strong>Step 4 – After closing.</strong> Stay available for referrals, vendors, and local questions.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
 
-            <article class="card quote-card">
-              <p>
-                “He handled photos, showings, and communication with tenants.
-                The house sold faster than we expected.”
-              </p>
-              <p class="quote-meta">Seller · Two-family in Sunset Park</p>
-            </article>
-
-            <article class="card quote-card">
-              <p>
-                “Clear updates, simple next steps, and honest answers. That is
-                all we wanted.”
-              </p>
-              <p class="quote-meta">First-time buyers · Crown Heights</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT / CTA -->
-      <section id="contact" class="section section-cta">
-        <div class="container cta-inner">
-          <div class="cta-copy">
+    <!-- CONTACT / CTA -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-layout">
+        <div class="contact-content">
+          <header class="section-header align-left">
             <h2>Ready to talk about your next move?</h2>
             <p>
-              This is where a real site would connect to John’s phone, email,
-              and calendar. For this demo, the layout simply shows how a clear
-              contact block can look.
+              In a real build, this block would connect to John’s phone,
+              email, and calendar. Here it just shows how a clear contact
+              section can look.
             </p>
-            <ul class="bullet-list">
-              <li>Clear call to action with one main button.</li>
-              <li>Backup options for email and a simple inquiry form.</li>
-            </ul>
+          </header>
 
-            <div class="cta-actions">
-              <a href="tel:3475497293" class="btn primary">Call John</a>
-              <a href="mailto:hello@example.com" class="btn ghost"
-                >Email John</a
-              >
-            </div>
+          <ul class="card-list">
+            <li>Clear call to action with one main button.</li>
+            <li>Backup options for email and a simple inquiry form.</li>
+          </ul>
+
+          <div class="hero-actions" style="margin-top: 1rem;">
+            <a href="tel:3475497293" class="btn-primary">Call John</a>
+            <a href="mailto:hello@example.com" class="btn-ghost">Email John</a>
           </div>
-
-          <form class="card contact-form" action="#" method="post">
-            <h3>Quick inquiry form</h3>
-            <p>In a real build, this would send straight to the agent’s inbox.</p>
-
-            <label>
-              Name
-              <input type="text" name="name" required />
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-
-            <label>
-              What are you looking for?
-              <textarea
-                name="message"
-                rows="4"
-                placeholder="Buying, selling, or renting? Neighborhoods, budget, timing..."
-              ></textarea>
-            </label>
-
-            <button type="submit" class="btn primary full-width">
-              Send message
-            </button>
-          </form>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
+        <form class="contact-form card">
+          <h3>Quick inquiry form</h3>
+          <p class="card-list">
+            In a real build, this would send straight to the agent’s inbox.
+          </p>
+
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            What are you looking for?
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Buying, selling, or renting? Neighborhoods, budget, timing..."
+            ></textarea>
+          </label>
+
+          <button type="submit" class="btn-primary">
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        Sample project designed by <span>The Good Neighbor Studio</span>.
+        All names, addresses, and prices are fictional.
+      </p>
+    </div>
+  </footer>
+
+  <!-- LISTING DETAIL MODALS -->
+  <div class="modal" id="listing-park-slope-condo" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <div class="modal-gallery">
+        <img
+          src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Modern condo exterior with balconies"
+        />
+        <img
+          src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Bright living room with large windows"
+        />
+        <img
+          src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Kitchen with modern finishes"
+        />
+      </div>
+      <div class="modal-body">
+        <h2>2-bed condo with balcony and park views</h2>
+        <p class="modal-meta">For sale · Crown Heights · $975,000</p>
+        <ul class="card-list">
+          <li>2 beds · 1.5 baths · 1,050 sq ft</li>
+          <li>Corner unit with south and west exposure.</li>
+          <li>Private balcony with park and skyline views.</li>
+          <li>Elevator building with on-site super and laundry.</li>
+        </ul>
         <p>
-          Sample project designed by
-          <span>The Good Neighbor Studio</span>.
-          All names, addresses, and prices are fictional.
+          In a real build, this page could also show floor plans,
+          downloadable PDFs, and a simple “Request a showing” form.
         </p>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <script src="main.js"></script>
-  </body>
+  <div class="modal" id="listing-prospect-heights-rental" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <div class="modal-gallery">
+        <img
+          src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Brick building with fire escapes"
+        />
+        <img
+          src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Cozy living room in pre-war apartment"
+        />
+        <img
+          src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Bedroom with large window"
+        />
+      </div>
+      <div class="modal-body">
+        <h2>Top-floor 1-bed in pre-war walk-up</h2>
+        <p class="modal-meta">For rent · Prospect Heights · $3,250 / month</p>
+        <ul class="card-list">
+          <li>1 bed · 1 bath · Top floor.</li>
+          <li>Original wood floors and moldings.</li>
+          <li>Short walk to Prospect Park and multiple train lines.</li>
+          <li>Pet-friendly with approval.</li>
+        </ul>
+        <p>
+          This detail layout is meant to feel calm and legible. It keeps the
+          photos large and the copy short and useful.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="listing-kensington-house" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <div class="modal-gallery">
+        <img
+          src="https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Brick single-family home"
+        />
+        <img
+          src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Backyard with patio"
+        />
+        <img
+          src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Bright kitchen"
+        />
+      </div>
+      <div class="modal-body">
+        <h2>Single-family brick home with garage</h2>
+        <p class="modal-meta">In contract · Kensington</p>
+        <ul class="card-list">
+          <li>3 beds · 2 baths · Private driveway and garage.</li>
+          <li>Finished basement with separate entrance.</li>
+          <li>Deep backyard with room for seating and planting.</li>
+          <li>Close to F/Q trains and local shops.</li>
+        </ul>
+        <p>
+          Marking a home as “In contract” or “Sold” keeps the portfolio
+          honest while still showing the kind of work the agent does.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle
+    const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+
+    function updateThemeLabel() {
+      const dark = !body.classList.contains('theme-light');
+      themeToggle.textContent = dark ? 'Light mode' : 'Dark mode';
+    }
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        body.classList.toggle('theme-light');
+        updateThemeLabel();
+      });
+      updateThemeLabel();
+    }
+
+    // Mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-toggle-open');
+      });
+    }
+
+    // Listing modals
+    const listingCards = document.querySelectorAll('.listing-card');
+    const modals = document.querySelectorAll('.modal');
+
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (!modal) return;
+      modal.classList.add('modal-open');
+      document.body.classList.add('no-scroll');
+    }
+
+    function closeModal() {
+      modals.forEach((modal) => modal.classList.remove('modal-open'));
+      document.body.classList.remove('no-scroll');
+    }
+
+    listingCards.forEach((card) => {
+      const targetId = card.getAttribute('data-modal-target');
+      card.addEventListener('click', (e) => {
+        // avoid double trigger from button focus edge cases
+        e.stopPropagation();
+        if (targetId) openModal(targetId);
+      });
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach((el) => {
+      el.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
 </html>
