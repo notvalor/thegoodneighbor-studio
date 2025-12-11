@@ -243,23 +243,34 @@
           </header>
 
           <div class="contact-details">
-            <p><strong>Email:</strong> PLACEHOLDER@GMAIL.COM</p>
+            <p><strong>Email:</strong> thegoodneighbor.studio@gmail.com</p>
             <p><strong>Number:</strong> 3475497293</p>
           </div>
 
-          <form class="contact-form" name="contact">
+          <form
+            class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <!-- Required hidden field for Netlify Forms -->
+            <input type="hidden" name="form-name" value="contact" />
+
             <label>
               Name
               <input type="text" name="name" required />
             </label>
+
             <label>
               Email
               <input type="email" name="email" required />
             </label>
+
             <label>
               Business type (barbershop, food truck, real estate, etc.)
               <input type="text" name="businessType" />
             </label>
+
             <label>
               What do you need designed?
               <textarea name="message" rows="4" required></textarea>
